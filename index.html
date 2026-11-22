@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Reddy Shivan Mohan</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Serif+4:wght@400;600&display=swap">
+<style>
+:root{--bg:#eef3f2;--ink:#0f2f35;--muted:#4b6368;--line:#c5d3d1;--accent:#e2a21b;--card:#fff;--link:#0b6b73;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d2226;--ink:#e6f0ee;--muted:#9bb3b3;--line:#24454a;--card:#12313a;--link:#6fd3d6;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0d2226;--ink:#e6f0ee;--muted:#9bb3b3;--line:#24454a;--card:#12313a;--link:#6fd3d6;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.65 "Source Serif 4",Georgia,serif}
+a{color:var(--link)}
+.wrap{max-width:860px;margin:0 auto;padding:0 22px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:500}
+nav div{display:flex;gap:20px;flex-wrap:wrap}
+nav a{text-decoration:none;color:var(--ink)}
+nav a:hover,nav a:focus-visible{color:var(--link)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.hero{padding:64px 0 48px}
+h1{font:800 clamp(2.6rem,8vw,5rem)/1 "Bricolage Grotesque",system-ui,sans-serif;margin:0 0 20px;letter-spacing:-.03em}
+.hero p{max-width:34em;font-size:1.25rem;color:var(--muted);margin:0 0 28px}
+.btn{display:inline-block;background:var(--accent);color:#1a1405;padding:12px 22px;border-radius:6px;font:700 1rem "Bricolage Grotesque",system-ui,sans-serif;text-decoration:none;margin-right:10px}
+.btn.alt{background:transparent;color:var(--ink);border:2px solid var(--line)}
+section{padding:44px 0;border-top:1px solid var(--line)}
+h2{font:700 1.8rem "Bricolage Grotesque",system-ui,sans-serif;margin:0 0 18px;letter-spacing:-.01em}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:20px}
+.card h3{font:700 1.15rem "Bricolage Grotesque",system-ui,sans-serif;margin:0 0 6px}
+.card p{margin:0;color:var(--muted);font-size:1rem}
+ul.tags{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:10px}
+ul.tags li{border:1px solid var(--line);background:var(--card);padding:6px 14px;border-radius:99px;font:500 .95rem "Bricolage Grotesque",system-ui,sans-serif}
+form{display:grid;gap:12px;max-width:520px}
+label{font:500 .95rem "Bricolage Grotesque",system-ui,sans-serif}
+input,textarea{width:100%;padding:11px;border:1px solid var(--line);border-radius:6px;background:var(--card);color:var(--ink);font:inherit}
+button{cursor:pointer;border:0}
+#msg{min-height:1.5em;color:var(--link);margin:0}
+footer{padding:30px 0 40px;color:var(--muted);font-size:.95rem;border-top:1px solid var(--line)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><strong>Shivan</strong><div><a href="#about">About</a><a href="#work">What I do</a><a href="#writing">Writing</a><a href="#contact">Contact</a></div></nav>
+
+<header class="hero">
+<h1>Reddy Shivan Mohan</h1>
+<p>Business analyst turned automation builder. I help teams and students use AI and automation to get real work done.</p>
+<a class="btn" href="#contact">Get in touch</a><a class="btn alt" href="#work">See what I do</a>
+</header>
+
+<section id="about">
+<h2>About me</h2>
+<p>I spent my early career as a Business Analyst at Deloitte, working across the full software development lifecycle and running proof-of-concepts between onshore and offshore teams. That taught me how to turn messy requirements into something people can build.</p>
+<p>Today I focus on automation and AI: building workflows, researching startup ideas, and teaching what I learn. I'm certified in Make (Advanced) and SAFe Agile.</p>
+</section>
+
+<section id="work">
+<h2>What I do</h2>
+<div class="grid">
+<div class="card"><h3>Automation</h3><p>Design and build no-code workflows that remove repetitive work.</p></div>
+<div class="card"><h3>AI training</h3><p>Weekend sessions that teach college students practical AI and automation skills.</p></div>
+<div class="card"><h3>Startup research</h3><p>Short daily insights from studying how startups start from zero.</p></div>
+</div>
+<h2 style="margin-top:34px">Skills</h2>
+<ul class="tags"><li>Business analysis</li><li>SDLC</li><li>Make</li><li>SAFe Agile</li><li>AI tools</li><li>Stakeholder communication</li></ul>
+</section>
+
+<section id="writing">
+<h2>Writing</h2>
+<p>I write about wellbeing and ideas worth acting on at <a href="https://wellbeingchemistry.com">wellbeingchemistry.com</a>.</p>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<form id="f">
+<div><label for="n">Name</label><input id="n" required></div>
+<div><label for="e">Email</label><input id="e" type="email" required></div>
+<div><label for="m">Message</label><textarea id="m" rows="4" required></textarea></div>
+<button class="btn" type="submit">Send message</button>
+<p id="msg" role="status"></p>
+</form>
+</section>
+
+<footer>&copy; <span id="y"></span> Reddy Shivan Mohan</footer>
+</div>
+<script>
+document.getElementById('y').textContent=new Date().getFullYear();
+document.getElementById('f').addEventListener('submit',function(ev){
+  ev.preventDefault();
+  var n=document.getElementById('n').value,m=document.getElementById('m').value;
+  var s=encodeURIComponent('Message from '+n);
+  window.location.href='mailto:YOUR_EMAIL@example.com?subject='+s+'&body='+encodeURIComponent(m);
+  document.getElementById('msg').textContent='Opening your email app\u2026';
+});
+</script>
+</body>
+</html>
