@@ -93,7 +93,7 @@ document.getElementById('f').addEventListener('submit',function(ev){
   ev.preventDefault();
   var n=document.getElementById('n').value,m=document.getElementById('m').value;
   var s=encodeURIComponent('Message from '+n);
-  window.location.href='mailto:YOUR_EMAIL@example.com?subject='+s+'&body='+encodeURIComponent(m);
+  window.location.href='mailto:test@example.com?subject='+s+'&body='+encodeURIComponent(m);
   document.getElementById('msg').textContent='Opening your email app\u2026';
 });
 </script>
