@@ -73,7 +73,42 @@ footer{padding:30px 0 40px;color:var(--muted);font-size:.95rem;border-top:1px so
 <h2>Writing</h2>
 <p>I write about wellbeing and ideas worth acting on at <a href="https://wellbeingchemistry.com">wellbeingchemistry.com</a>.</p>
 </section>
+<section id="practice">
+<h2>JavaScript practice</h2>
+<div class="card">
+<h3>Tip calculator</h3>
+<input id="bill" type="number" placeholder="Bill amount, e.g. 500">
+<input id="tip" type="number" placeholder="Tip %, e.g. 10" style="margin-top:8px">
+<button class="btn" style="margin-top:10px" onclick="calcTip()">Calculate</button>
+<p id="tipResult"></p>
+</div>
+<div class="card" style="margin-top:16px">
+<h3>My skills list</h3>
+<ul id="skillList"></ul>
+</div>
+<script>
+function calcTip() {
+  var bill = parseFloat(document.getElementById("bill").value);
+  var percent = parseFloat(document.getElementById("tip").value);
+  var out = document.getElementById("tipResult");
+  if (isNaN(bill) || isNaN(percent)) {
+    out.textContent = "Please enter both numbers.";
+    return;
+  }
+  var tip = bill * percent / 100;
+  out.textContent = "Tip: " + tip.toFixed(2) + " | Total: " + (bill + tip).toFixed(2);
+}
 
+var skills = ["Make", "SAFe", "AI tools"];
+skills.push("JavaScript");
+var list = document.getElementById("skillList");
+for (var i = 0; i < skills.length; i++) {
+  var li = document.createElement("li");
+  li.textContent = skills[i];
+  list.appendChild(li);
+}
+</script>
+</section>
 <section id="contact">
 <h2>Contact</h2>
 <form id="f">
